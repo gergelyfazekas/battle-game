@@ -1,3 +1,3 @@
 # battle-game
 
-A two-team game where characters figth against each other based on initial properties and randomness.
+A two-team game where characters fight against each other based on initial properties and randomness.
