@@ -1,14 +1,6 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
 
 import numpy as np
 import random
-
-
-# In[2]:
 
 
 def simulate(game, n_times):
@@ -165,31 +157,23 @@ class Game:
             print("Winner: ", winner)
             print("")
         return winner
-        
-
-
-# In[3]:
-
-
-# create teams with dictionaries:
-    # keys are arbitrary strings
-    # values are dictionaries themselves with fixed key names (see Character.__init__ for supported key names)
-
-team_A_properties = {
-    'character_1': {'id': 1, 'attack_strength':5, 'defense_strength': 10, 'life':10, 'weapon': "spear"},
-    'character_2': {'id': 2, 'attack_strength': 6, 'defense_strength': 9, 'life': 15, 'weapon': "spear"}
-    }
-
-team_B_properties = {
-    'character_1': {'id': 1, 'attack_strength':4, 'defense_strength': 12, 'life':11, 'weapon': "spear"},
-    'character_2': {'id': 2, 'attack_strength': 8, 'defense_strength': 15, 'life': 16, 'weapon': "spear"}
-    }
-
-
-# In[4]:
 
 
 if __name__ == '__main__':
+    # create teams with dictionaries:
+    # keys are arbitrary strings
+    # values are dictionaries themselves with fixed key names (see Character.__init__ for supported key names)
+
+    team_A_properties = {
+        'character_1': {'id': 1, 'attack_strength': 5, 'defense_strength': 10, 'life': 10, 'weapon': "spear"},
+        'character_2': {'id': 2, 'attack_strength': 6, 'defense_strength': 9, 'life': 15, 'weapon': "spear"}
+    }
+
+    team_B_properties = {
+        'character_1': {'id': 1, 'attack_strength': 4, 'defense_strength': 12, 'life': 11, 'weapon': "spear"},
+        'character_2': {'id': 2, 'attack_strength': 8, 'defense_strength': 15, 'life': 16, 'weapon': "spear"}
+    }
+
 
     # # Example - Play
     #
@@ -205,8 +189,7 @@ if __name__ == '__main__':
 
 
 
-
-    # Example - Simualtion
+    # Example - Simulation
 
     # Initialize the teams: name, property dictionary
     team_A = Team("team_A", team_A_properties)
